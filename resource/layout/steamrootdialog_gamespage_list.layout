@@ -1,0 +1,41 @@
+"resource/layout/steamrootdialog_gamespage_list.layout"
+{
+	controls
+	{
+		"GamesList"
+		{
+			tabposition=1
+
+			//skin kancolle
+			style="GamesListPanel"
+		}
+	}
+
+	//skin kancolle
+	styles
+	{
+		GamesListPanel
+		{
+			render_bg
+			{
+				0="gradient( x0+1, y0, x1-1, y1-2, dialogbg, almostblack )"
+				1="image( x0-84, y1-414, x1, y1,graphics/kancolle/5shigure)"
+				2="image( x1-245, y1-414, x1, y1,graphics/kancolle/5yuudachi)"
+				3="gradient( x0+1, y0, x1-1, y1-2, almostblack , none )"
+			}
+		}
+	}
+
+	colors
+	{
+		ListPanel.PostSectionLeading	12
+	}	
+	
+	layout
+	{
+		// content pages
+		place { control="GamesList" 		width=max height=max margin-left=1 margin-top=1 }
+
+	}
+
+}
